@@ -1,0 +1,27 @@
+# Java / Maven
+daylog-backend/target/
+
+# Node / Vite
+daylog-frontend/node_modules/
+daylog-frontend/dist/
+daylog-frontend/.vite/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db

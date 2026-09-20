@@ -1,0 +1,3 @@
+import { apiRequest } from './client';
+export const explainDay = (date: string, onUnauthorized?: () => void) => apiRequest<{ summary?: string; highlights?: unknown; timeBreakdown?: unknown; observations?: unknown }>('/api/ai/explain-day', { method: 'POST', body: JSON.stringify({ date }) }, onUnauthorized);
+export const askDay = (date: string, question: string, onUnauthorized?: () => void) => apiRequest<{ answer?: string }>('/api/ai/ask', { method: 'POST', body: JSON.stringify({ date, question }) }, onUnauthorized);
